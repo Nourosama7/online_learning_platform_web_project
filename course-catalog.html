@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> course-catalog</title>
+</head>
+<body>
+<header>
+    <h1>EduConnect-Online Learning Platform</h1>
+
+    <nav class="breadcrumb">
+        <a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\index.html\index.html">Home</a> > 
+        <a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\course-catalog.html">course-catalog</a> 
+    <nav>
+    <nav>
+        <ul>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\index.html\index.html">Home</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\about.html">About</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\registiration.html">Register</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\student-dashboard.html">Dashboard</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\thank.html">thank</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\contact.html">contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section>
+    <form>
+        <input type="search" placeholder="Search courses..." name="search">
+
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option>Popularity</option>
+            <option>Price</option>
+            <option>Rating</option>
+            <option>Newest</option>
+        </select>
+
+        <span>Results: 6 courses</span>
+    </form>
+</section>
+
+<main style="display:flex;">
+
+    <aside style="width:20%;">
+        <h2>Filters</h2>
+
+        <form>
+            <h3>Category</h3>
+            <label><input type="checkbox"> Web Development</label><br>
+            <label><input type="checkbox"> Data Science</label><br>
+            <label><input type="checkbox"> Marketing</label><br>
+
+            <h3>Level</h3>
+            <label><input type="radio" name="lvl"> Beginner</label><br>
+            <label><input type="radio" name="lvl"> Intermediate</label><br>
+            <label><input type="radio" name="lvl"> Advanced</label><br>
+
+            <h3>Duration</h3>
+            <select>
+                <option>Less than 5 hours</option>
+                <option>5–10 hours</option>
+                <option>More than 10 hours</option>
+            </select>
+
+            <h3>Rating</h3>
+            <input type="range" min="1" max="5" value="4">
+
+            <br><br>
+            <button type="submit">Apply Filters</button>
+        </form>
+    </aside>
+
+    <section style="width:80%;">
+        <h2>Available Courses</h2>
+
+        <article>
+            <figure>
+                <img src="images/course1.jpg" alt="Course Image" width="200">
+                <figcaption>Intro to HTML & CSS</figcaption>
+            </figure>
+
+            <h3>HTML & CSS for Beginners</h3>
+            <p>Learn the basics of web development with hands-on examples.</p>
+            <p><strong>Instructor:</strong> John Doe</p>
+
+            <dl>
+                <dt>Duration:</dt><dd>6 hours</dd>
+                <dt>Level:</dt><dd>Beginner</dd>
+                <dt>Price:</dt><dd>$20</dd>
+                <dt>Rating:</dt><dd>5 stars</dd>
+            </dl>
+
+            <ul>
+                <li>Interactive lessons</li>
+                <li>Real-world projects</li>
+                <li>Certificate included</li>
+            </ul>
+
+            <a href="course-detail.html">View Details</a>
+        </article>
+
+    </section>
+</main>
+
+<section>
+    <h2>Course Comparison</h2>
+
+    <table border="1">
+        <caption>Comparison of selected courses</caption>
+
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Level</th>
+                <th>Rating</th>
+                <th>Enrollment</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">HTML & CSS Basics</td>
+                <td>$20</td>
+                <td>6h</td>
+                <td>Beginner</td>
+                <td>2 stars</td>
+                <td>5000+</td>
+            </tr>
+            <tr>
+                <td colspan="5">Special discount available this month!</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript Essentials</td>
+                <td>$30</td>
+                <td>8h</td>
+                <td>Intermediate</td>
+                <td>3 stars</td>
+                <td>8000+</td>
+            </tr>
+
+            <tr>
+                <td>Python for Data Science</td>
+                <td>$40</td>
+                <td>10h</td>
+                <td>Intermediate</td>
+                <td>4 stars</td>
+                <td>6500+</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
+<footer>
+  <h3>Social media</h3>
+  <li><a href="https://www.linkedin.com/in/nour-osama-97a3952ab?utm_source=share_via&utm_content=profile&utm_medium=member_ios">Contact us via linkedind</a></li>
+  <h3>Email </h3>
+  <a href="mailto:noa400345@gu.edu.eg">email address </a>
+ 
+  <p>&copy; 2025 EduConnect All rights reserved.</p>
+</footer>

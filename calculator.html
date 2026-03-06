@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+
+<header>
+    <h1>Calculator</h1>
+</header>
+
+<main>
+    <form action="calculator-result.html" method="get">
+
+        <input type="hidden" name="memoryValue" value="0">
+        <input type="hidden" name="lastResult" value="0">
+
+        <fieldset>
+            <legend>Numbers Input</legend>
+
+            <label for="first">First Number:</label>
+            <input type="number" id="first" name="firstNumber" required>
+
+            <br><br>
+
+            <label for="second">Second Number:</label>
+            <input type="number" id="second" name="secondNumber" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Operation</legend>
+
+            <label><input type="radio" name="operation" value="Addition" required> Addition (+)</label><br>
+            <label><input type="radio" name="operation" value="Subtraction"> Subtraction (−)</label><br>
+            <label><input type="radio" name="operation" value="Multiplication"> Multiplication (×)</label><br>
+            <label><input type="radio" name="operation" value="Division"> Division (÷)</label><br>
+            <label><input type="radio" name="operation" value="Power"> Power (^)</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Memory Functions</legend>
+            <ol>
+                <li><button type="submit" name="memory" value="store">Store</button></li>
+                <li><button type="submit" name="memory" value="recall">Recall</button></li>
+                <li><button type="submit" name="memory" value="clear">Clear</button></li>
+            </ol>
+        </fieldset>
+
+        <br>
+
+
+        <section>
+            <h2>History</h2>
+            <ol>
+                <li>Previous Store</li>
+                <li>Previous Recall</li>
+                <li>Previous Clear</li>
+            </ol>
+        </section>
+
+        <br>
+
+        <button type="submit">Calculate</button>
+        <button type="reset">Clear</button>
+
+    </form>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registiration</title>
+</head>
+<body>
+<header>
+    <h1>EduConnect-Online Learning Platform</h1>
+    <nav class="breadcrumb">
+        <a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\index.html\index.html">Home</a> > 
+        <a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\registiration.html">Registiration</a> 
+    <nav>
+    <nav>
+        <ul>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\index.html\index.html">Home</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\about.html">About</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\course-catalog.html">Course catalog</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\registiration.html">Register</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\student-dashboard.html">Dashboard</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\thank.html">thank</a></li>
+            <li><a href="C:\Users\East-Sound\Desktop\223102148  223105287  web_project\pages\contact.html">contact</a></li>
+        </ul>
+    </nav>
+</header>
+<form action="pages/thank.html" method="get" name="registrationForm" id="registrationForm">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+       
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" name="dateofbirth" required />
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" id="prefer not to say" name="gender" value="prefer not to say" />
+        <label for="prefer not to say">prefer not to say</label>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="01234567890" required />
+        <br><br>
+
+    </fieldset>
+</form>
+<fieldset>
+    <legend>Academic Information</legend>
+
+    <fieldset>
+        <legend>Current Degree Level</legend>
+        <label>
+            <input type="radio" name="degreeLevel" value="bachelor" required checked>
+            Bachelor's Degree
+        </label><br>
+        <label>
+            <input type="radio" name="degreeLevel" value="master" required>
+            Master's Degree
+        </label><br>
+        <label>
+            <input type="radio" name="degreeLevel" value="phd" required>
+            PhD
+        </label>
+
+    </fieldset>
+    <br>
+
+<label for="major">Major / Department :</label>
+<select id="major" name="major" required>
+    <option value=""> Select your Major </option>
+
+    <optgroup label="Faculty of Engineering">
+        <option value="computer-science">Computer Science</option>
+        <option value="information-technology">Information Technology</option>
+        <option value="software-engineering">Software Engineering</option>
+        <option value="computer-engineering">Computer Engineering</option>
+    </optgroup>
+
+    <optgroup label="Faculty of Business">
+        <option value="marketing">Marketing</option>
+        <option value="finance">Finance</option>
+        <option value="management">Management</option>
+        <option value="accounting">Accounting</option>
+    </optgroup>
+
+    <optgroup label="Faculty of Science">
+        <option value="mathematics">Mathematics</option>
+        <option value="physics">Physics</option>
+        <option value="biology">Biology</option>
+        <option value="chemistry">Chemistry</option>
+    </optgroup>
+</select>
+<br><br>
+
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year" required>
+        <option value="" disabled selected>Select year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+    </select>
+    <br><br>
+
+    <label for="gpa">Current GPA:</label>
+    <input type="number" step="0.01" min="0" max="4" id="gpa" name="gpa" required />
+    <br><br>
+
+</fieldset>
+   
+<label for="semester">Current Semester:</label>
+<input 
+    type="number" 
+    id="semester" 
+    name="semester" 
+    required 
+    min="1" 
+    max="12" 
+    placeholder="1-12" 
+    title="Enter a valid semester from 1 to 12">
+<br><br>
+
+    <fieldset>
+        <legend>Previous Programming Experience</legend>
+
+        <label>
+            <input type="checkbox" name="experience" value="python">
+            Python
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="experience" value="java">
+            Java
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="experience" value="cpp">
+            C++
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="experience" value="javascript">
+            JavaScript
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="experience" value="php">
+            PHP
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="experience" value="csharp">
+            C#
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="experience" value="none">
+            None
+        </label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Course Preferences</legend>
+
+        <fieldset>
+            <legend> Preferred Learning Mode </legend>
+            <label>
+                <input type="radio" name="learningMode" value="on-campus" required>
+                On-Campus
+            </label><br>
+    
+            <label>
+                <input type="radio" name="learningMode" value="online" required>
+                Online
+            </label><br>
+    
+            <label>
+                <input type="radio" name="learningMode" value="hybrid" required>
+                Hybrid / Mixed
+            </label>
+        </fieldset>
+        <br>
+    
+        <label for="courseCategories">Course Categories of Interest:</label><br>
+        <select id="courseCategories" name="courseCategories[]" multiple size="5" required title="Select 1-3 categories (Hold Ctrl/Cmd for multiple)">
+            <option value="web-development">Web Development</option>
+            <option value="mobile-development">Mobile Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="artificial-intelligence">Artificial Intelligence</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="game-development">Game Development</option>
+            <option value="cloud-computing">Cloud Computing</option>
+            <option value="database-management">Database Management</option>
+            <option value="devops">DevOps</option>
+            <option value="blockchain-technology">Blockchain Technology</option>
+        </select>
+        <small>Select 1-3 categories (Hold Ctrl/Cmd for multiple)</small>
+        <br><br>
+    
+        <label for="classSchedule">Preferred Class Schedule:</label>
+        <select id="classSchedule" name="classSchedule" required>
+            <option value=""> Select Schedule </option>
+            <option value="morning">Morning 8:00 AM - 12:00 PM</option>
+            <option value="afternoon">Afternoon 12:00 PM - 4:00 PM</option>
+            <option value="evening">Evening 4:00 PM - 8:00 PM</option>
+            <option value="weekend">Weekend Saturday & Sunday</option>
+        </select>
+        <br><br>
+    
+        <label for="primaryCourse">Primary Course Selection:</label>
+        <select id="primaryCourse" name="primaryCourse" required>
+            <option value="">-- Select Primary Course --</option>
+    
+            <optgroup label="Web Development">
+                <option value="html-css">HTML & CSS Fundamentals</option>
+                <option value="advanced-js">Advanced JavaScript</option>
+                <option value="react-node">React.js Development, Node.js & Backend</option>
+            </optgroup>
+    
+            <optgroup label="Mobile Development">
+                <option value="android">Android Development</option>
+                <option value="ios">iOS Development</option>
+                <option value="flutter">Flutter Cross-Platform</option>
+            </optgroup>
+    
+            <optgroup label="Data Science & AI">
+                <option value="python-data">Python for Data Science</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="deep-learning">Deep Learning</option>
+            </optgroup>
+        </select>
+        <br><br>
+    
+        <label for="altCourses">Alternative Courses (optional):</label><br>
+        <select id="altCourses" name="altCourses[]" multiple size="4" title="Select up to 3 alternative courses">
+            <option value="sql">SQL & Databases</option>
+            <option value="git">Git & Version Control</option>
+            <option value="docker">Docker & Containers</option>
+            <option value="aws">AWS Cloud Basics</option>
+            <option value="web-security">Web Security</option>
+            <option value="software-testing">Software Testing</option>
+        </select>
+    
+    </fieldset>
+    <fieldset>
+        <legend>Additional Information</legend>
+    
+        <label for="hearAboutus">How did you hear about us?</label>
+        <select id="hearAboutus" name="hearAboutus" required>
+            <option value="">- Please Select -</option>
+            <option value="search-engine">Search Engine (Google, Bing)</option>
+            <option value="social-media">Social Media</option>
+            <option value="friend">Friend or Colleague</option>
+            <option value="university-announcement">University Announcement</option>
+            <option value="online-advertisement">Online Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+    
+        <label for="specialReq">Special Requirements or Accessibility Needs:</label><br>
+        <textarea id="specialReq" name="specialReq" rows="4" cols="50" maxlength="500" placeholder="Enter your special requirements or accessibility needs" title="Provide details if you have any special requirements"></textarea>
+        <br><br>
+    
+        <label for="learningGoals">Your Learning Goals and Expectations:</label><br>
+        <textarea id="learningGoals" name="learningGoals" rows="5" cols="50" maxlength="500" placeholder="Describe your learning goals and expectations"></textarea>
+    
+    </fieldset>
+    <fieldset>
+        <legend>Terms and Conditions</legend>
+    
+        <label>
+            <input type="checkbox" name="termsAgreement" required>
+            I agree to the <a href="pages/terms.html" target="_blank">Terms and Conditions</a>
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" name="privacyPolicy" required>
+            I have read and accept the <a href="pages/privacy.html" target="_blank">Privacy Policy</a>
+        </label>
+        <br><br>
+        <label>
+            <input type="checkbox" name="newsletter">
+            Subscribe to our newsletter for course updates and special offers
+        </label>
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="marketing">
+            I agree to receive marketing communications via email
+        </label>
+        <br><br>
+    </fieldset>
+
+<input type="hidden" name="formVersion" value="1.0">
+<input type="hidden" name="submissionDate" id="submissionDate" value="">
+<input type="hidden" name="userAgent" id="userAgent" value="">
+
+<button type="submit" name="submitBtn" id="submitBtn">Register Now</button>
+<button type="reset" name="resetBtn" id="resetBtn" title="Clear all form fields">Clear Form</button>
+<button type="button" name="saveDraftBtn" id="saveDraftBtn">Save Draft</button>
+<footer>
+    <h3>Social media</h3>
+    <li><a href="https://www.linkedin.com/in/nour-osama-97a3952ab?utm_source=share_via&utm_content=profile&utm_medium=member_ios">Contact us via linkedind</a></li>
+    <h3>Email </h3>
+    <a href="mailto:noa400345@gu.edu.eg">email address </a>
+   
+    <p>&copy; 2025 EduConnect All rights reserved.</p>
+</footer>
+
+    
+   
+    
